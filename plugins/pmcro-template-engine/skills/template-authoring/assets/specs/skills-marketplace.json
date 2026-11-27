@@ -1,0 +1,28 @@
+{
+  "type": "skills-marketplace",
+  "description": "Agent-Skills marketplace with one plugin, N skills (SKILL.md + scripts + references + assets), commands, optional agents and host adapters.",
+  "stages": ["foundation", "skills", "agents", "commands", "plugins", "integration", "tests"],
+  "default_skills": ["core"],
+  "defaults": {},
+  "entries": [
+    {"path": "README.md", "stage": "foundation", "template": "common/README.md.tmpl"},
+    {"path": ".gitignore", "stage": "foundation", "template": "common/gitignore.tmpl"},
+    {"path": ".pmcro/goal.json", "stage": "foundation", "template": "pmcro/goal.json.tmpl"},
+    {"path": ".pmcro/trails/README.md", "stage": "foundation", "template": "pmcro/trails-readme.md.tmpl"},
+    {"path": "plugins/{{name}}/skills/{{skill}}/SKILL.md", "stage": "skills", "foreach": "skills", "template": "skill/SKILL.md.tmpl"},
+    {"path": "plugins/{{name}}/skills/{{skill}}/scripts/run.py", "stage": "skills", "foreach": "skills", "template": "skill/run.py.tmpl"},
+    {"path": "plugins/{{name}}/skills/{{skill}}/references/guide.md", "stage": "skills", "foreach": "skills", "template": "skill/guide.md.tmpl"},
+    {"path": "plugins/{{name}}/skills/{{skill}}/assets/example.template.md", "stage": "skills", "foreach": "skills", "template": "skill/example.template.md.tmpl"},
+    {"path": "plugins/{{name}}/agents/{{agent}}.md", "stage": "agents", "foreach": "agents", "template": "agent/agent.md.tmpl"},
+    {"path": "plugins/{{name}}/commands/{{skill}}.md", "stage": "commands", "foreach": "skills", "template": "command/command.md.tmpl"},
+    {"path": "plugins/{{name}}/.claude-plugin/plugin.json", "stage": "plugins", "template": "plugin/plugin.json.tmpl"},
+    {"path": ".claude-plugin/marketplace.json", "stage": "integration", "template": "plugin/marketplace.json.tmpl"},
+    {"path": "CLAUDE.md", "stage": "integration", "when": {"hosts": "claude-code"}, "template": "host/CLAUDE.md.tmpl"},
+    {"path": ".github/copilot-instructions.md", "stage": "integration", "when": {"hosts": "copilot"}, "template": "host/copilot-instructions.md.tmpl"},
+    {"path": "AGENTS.md", "stage": "integration", "when": {"hosts": "agents-md"}, "template": "host/AGENTS.md.tmpl"},
+    {"path": "tests/selfcheck.py", "stage": "tests", "template": "common/selfcheck.py.tmpl"}
+  ],
+  "tests": [
+    {"id": "skill-selfchecks", "cmd": ["python3", "tests/selfcheck.py"], "cwd": ""}
+  ]
+}

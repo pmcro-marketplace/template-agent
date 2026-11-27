@@ -1,0 +1,12 @@
+# {{skill}} guide
+
+Read this before running the skill.
+
+## Contract
+- Input is a short piece of text; the output is `assets/example.template.md` with `<<INPUT>>` replaced.
+- The skill never invents content beyond the input; extend the template, not the script, to change the shape.
+- Report the skill as working only after `scripts/run.py --selfcheck` exits 0.
+
+## Extending
+Replace the example template and runner with real behaviour for `{{skill}}`, keep `--selfcheck`, and keep
+every path named in `SKILL.md` resolvable. The generator's `validate.py` checks both.

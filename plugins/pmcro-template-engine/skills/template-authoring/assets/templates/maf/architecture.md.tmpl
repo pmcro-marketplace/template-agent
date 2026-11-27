@@ -1,0 +1,10 @@
+# {{Name}} architecture
+
+- `src/{{Name}}.Agent`: Microsoft Agent Framework agent over an `IChatClient` (Ollama at `{{OLLAMA_ENDPOINT}}`, model `{{OLLAMA_MODEL}}`).
+- `Middleware/AuditMiddleware.cs`: logs each agent run; place governance (allow/deny/modify) here.
+- `tests/{{Name}}.Agent.Smoke`: builds the agent without a network call and asserts its identity.
+- `skills/`: agentskills.io skills; `agents/{{name}}.agent.md`: the agent definition for skill hosts.
+- `.pmcro/`: goal, trails and evidence for generation and later changes.
+
+Package versions are pinned by the person who generated the project (`MAF_VERSION`, `OLLAMASHARP_VERSION`);
+the build and smoke gates decide whether the combination actually compiles and runs.

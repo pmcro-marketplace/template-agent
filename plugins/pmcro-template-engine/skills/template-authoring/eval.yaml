@@ -1,0 +1,23 @@
+skill: template-authoring
+cases:
+  - name: full-cycle-pmcro-marketplace
+    prompt: "Generate a complete PMCR-O marketplace called acme from the skills in ./pmcro-skills into an empty directory."
+    expect:
+      - runs discover, resolve, then generate and validate once per stage
+      - ends with inventory.py reporting COMPLETE and tests passed
+  - name: does-not-stop-at-init
+    prompt: "/init a new agent project"
+    expect:
+      - continues past the foundation stage until all stages verified or a named blocker
+  - name: missing-version-is-blocked
+    prompt: "Scaffold a MAF agent called demo."
+    expect:
+      - reports MAF_VERSION and OLLAMASHARP_VERSION as blockers, does not invent versions
+  - name: no-silent-overwrite
+    prompt: "Generate into a directory that already has a README.md."
+    expect:
+      - README.md is left untouched and listed as existing
+  - name: missing-tool-not-green
+    prompt: "Run the tests for the generated .NET agent where dotnet is not installed."
+    expect:
+      - dotnet tests are reported blocked, verdict INCOMPLETE

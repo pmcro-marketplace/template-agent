@@ -1,0 +1,11 @@
+using {{Name}}.Agent;
+
+// Builds the agent without any network call and asserts its identity.
+var agent = AgentFactory.Create("{{OLLAMA_ENDPOINT}}", "{{OLLAMA_MODEL}}");
+if (agent.Name != AgentFactory.AgentName)
+{
+    Console.Error.WriteLine($"FAIL: agent name '{agent.Name}' != '{AgentFactory.AgentName}'");
+    return 1;
+}
+Console.WriteLine("smoke ok");
+return 0;

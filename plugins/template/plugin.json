@@ -1,0 +1,29 @@
+{
+    "$schema":  "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+    "name":  "template",
+    "version":  "0.2.2",
+    "description":  "Declarative reusable template discovery, creation, rendering, validation, and projection workflows.",
+    "author":  {
+                   "name":  "Planner Agent"
+               },
+    "keywords":  [
+                     "pmcro",
+                     "agent",
+                     "governance"
+                 ],
+    "extensions":  {
+                       "com.openai":  {
+                                          "interface":  {
+                                                            "displayName":  "Template Agent",
+                                                            "shortDescription":  "Template-driven generation",
+                                                            "longDescription":  "Declarative reusable template discovery, creation, rendering, validation, and projection workflows.",
+                                                            "developerName":  "Planner Agent",
+                                                            "category":  "Developer Tools",
+                                                            "capabilities":  [
+
+                                                                             ],
+                                                            "defaultPrompt":  "For every actionable request, resolve the real Agent -\u003e Plugin -\u003e Skill -\u003e Function. When the installed Hook Agent is available, allow it to autonomously emit and attempt only the applicable lifecycle functions above the target execution. Then invoke the real target capability and verify evidence. Hook emission is not execution; unavailable lifecycle providers return NOT_INVOKED."
+                                                        }
+                                      }
+                   }
+}

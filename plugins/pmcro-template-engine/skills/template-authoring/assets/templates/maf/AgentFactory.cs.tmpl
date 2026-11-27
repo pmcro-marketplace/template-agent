@@ -1,0 +1,19 @@
+using Microsoft.Agents.AI;
+using Microsoft.Extensions.AI;
+using OllamaSharp;
+
+namespace {{Name}}.Agent;
+
+public static class AgentFactory
+{
+    public const string AgentName = "{{agent}}";
+
+    public static AIAgent Create(string endpoint, string model)
+    {
+        IChatClient chat = new OllamaApiClient(new Uri(endpoint), model);
+        return new ChatClientAgent(
+            chat,
+            instructions: "You are the {{agent}} agent of {{name}}. Use only installed skills; report evidence.",
+            name: AgentName);
+    }
+}

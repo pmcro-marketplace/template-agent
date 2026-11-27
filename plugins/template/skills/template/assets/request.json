@@ -1,0 +1,6 @@
+{
+  "kind": "CapabilityRequest",
+  "plugin": "template",
+  "skill": "template",
+  "status": "proposed"
+}

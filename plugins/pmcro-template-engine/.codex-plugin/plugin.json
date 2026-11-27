@@ -1,0 +1,15 @@
+{
+  "name": "pmcro-template-engine",
+  "version": "0.1.0",
+  "description": "PMCR-O template engine: incremental, verified generation of complete agent, skill, plugin and marketplace projects.",
+  "skills": "./skills/",
+  "interface": {
+    "capabilities": [],
+    "category": "Developer Tools",
+    "defaultPrompt": "Use template-authoring to plan, generate, and validate a complete project directory.",
+    "developerName": "Planner Agent",
+    "displayName": "PMCR-O Template Engine",
+    "longDescription": "Generate and validate full agent, skill, plugin, and marketplace repositories incrementally using supplied template specifications.",
+    "shortDescription": "Generate verified templates"
+  }
+}

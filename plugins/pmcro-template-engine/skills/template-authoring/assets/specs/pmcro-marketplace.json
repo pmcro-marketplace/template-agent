@@ -1,0 +1,12 @@
+{
+  "type": "pmcro-marketplace",
+  "extends": "skills-marketplace",
+  "description": "PMCR-O orchestration marketplace: the skills-marketplace plus the phase skills copied verbatim from a --source reference, one command per phase and an orchestrator agent.",
+  "stages": ["foundation", "skills", "agents", "commands", "plugins", "integration", "tests"],
+  "entries": [
+    {"copy_dir": "{{source}}/{{phase}}", "dest": "plugins/{{name}}/skills/{{phase}}", "stage": "skills", "foreach": "phases"},
+    {"path": "plugins/{{name}}/agents/orchestrator.md", "stage": "agents", "template": "pmcro/orchestrator.agent.md.tmpl"},
+    {"path": "plugins/{{name}}/commands/pmcro-{{phase}}.md", "stage": "commands", "foreach": "phases", "template": "pmcro/phase-command.md.tmpl"}
+  ],
+  "tests": []
+}

@@ -1,0 +1,78 @@
+{
+  "template": {
+    "version": "0.2.2",
+    "skills": [
+      "creator",
+      "template"
+    ],
+    "sha256": {
+      ".claude-plugin/plugin.json": "4e2cfc5301544d4dfe70baedfc68096eac6a9e6190fb028408be95c8bc38ce77",
+      ".codex-plugin/plugin.json": "3e7df65bd137c572fc57f811621bea98969170a0a3b7a22d9ea938059a49b6e8",
+      "INVOCATION.md": "5f95e82ce4b051ac093bc22b1515ba12e2253b3d709b3ae8b5f400db11d8425c",
+      "plugin.json": "ff159b6327828404e454be3abbfab5644feaf1c7fc6c0ed40344ff09ab3ad512",
+      "README.md": "463380e31d4cf42d27b7dbc483e839cd2aa7d0106a64d6b50ae2902157f40d60",
+      "skills/creator/assets/request.json": "fcd55de188620d0e4f5638ad289a49f0e649aa4096e651f4e5dc5199ab5d8555",
+      "skills/creator/references/contract.md": "451caa609a159d613b8982b9e870095008ac5da30b51a22b0534a76ce2f860cf",
+      "skills/creator/scripts/validate.py": "796e6fe9a30d6df62697ebbc6eb7d6d7a29c315371eae3ef02276c15cc94391a",
+      "skills/creator/SKILL.md": "235887a69b064119e6b224e51d5405227fd7c2d8e2507bd76b91b71f707b02a7",
+      "skills/template/assets/request.json": "652b564e5415d9cf13d43b5a83bb72822835072fe8f2ffd4ba167f44264cf20c",
+      "skills/template/references/contract.md": "260450ddb8c95e84e534ad79ffa196a3055aa3671288e4ee697df6e3dcc5228a",
+      "skills/template/scripts/validate.py": "d6b63867fb6e74f53e5715426e3b2b23b1fc99a31f687ec38886b718378b5c2a",
+      "skills/template/SKILL.md": "548903e94e918effd66aba1002d20e34724e6605e8c4f785825c5e42c4e9f183"
+    }
+  },
+  "pmcro-template-engine": {
+    "version": "0.1.0",
+    "skills": [
+      "template-authoring"
+    ],
+    "sha256": {
+      ".claude-plugin/plugin.json": "ce724baf4781570be5ffb8dfcf86bc2e32f5d49332322d7dce62a5152e7e839b",
+      ".codex-plugin/plugin.json": "95f330c3301f07b1b2ac55eb2b691634bcb66eecc1c3b83899651aae56d799cb",
+      "plugin.json": "05939836009ce7103fc0fcebf8371aa6c41a3ed8ed490ecde8e2a96c9fee6f45",
+      "skills/template-authoring/assets/manifest.template.json": "58c9887f08d18586c5cbdaaf42c25257312b94384ad7dfe5e73cd0fdfa05fc8a",
+      "skills/template-authoring/assets/specs/agent-maf.json": "91eff92b82873ffd783f9cf3b84e5cce1673876fca097712216a4b3cbbbc251b",
+      "skills/template-authoring/assets/specs/pmcro-marketplace.json": "76a2ddcfff777984166b3ef0715e35f911443aed2f21f025256d3a3752c6b3d9",
+      "skills/template-authoring/assets/specs/skills-marketplace.json": "f21f9e0e210119e5a36c2b172ad66f27b21e6a5ee2298b1c0363fdc1941500f0",
+      "skills/template-authoring/assets/templates/agent/agent.md.tmpl": "b2f24da445c9532629d7596db09ff6d8623a0a4b2a93a880fa2ca495ccef07b9",
+      "skills/template-authoring/assets/templates/command/command.md.tmpl": "4ee519ee2999016c5a1ab11973df23e6382fa86185fed0db7d112113d3f4b82e",
+      "skills/template-authoring/assets/templates/common/gitignore.tmpl": "b5579ad522b7edb8456261dc76872651e4363627cd87a8941186e8a7c96a7eef",
+      "skills/template-authoring/assets/templates/common/README.md.tmpl": "a248bd7da94686211d8ea5dfe8ec4b64e0a123b92cdacc6a97607d83906e66b6",
+      "skills/template-authoring/assets/templates/common/selfcheck.py.tmpl": "182f969dd4c09a97d50213d210c8ae851bc2be60097200887b0ee9f251cd6eb2",
+      "skills/template-authoring/assets/templates/host/AGENTS.md.tmpl": "23ffe3d851d4571c9af7a1a86f382fb6c8f75313529dcdc9d5e2ab0b33a1abd6",
+      "skills/template-authoring/assets/templates/host/CLAUDE.md.tmpl": "fb26ff953f0f7336bf5ff92076c882649374b2ea41de4ca95f015e9572feeaf0",
+      "skills/template-authoring/assets/templates/host/copilot-instructions.md.tmpl": "e682bfd2549ee80cf1c9c660a7e7601772d425f483b9803bdea95f4f88ad3a35",
+      "skills/template-authoring/assets/templates/maf/Agent.csproj.tmpl": "a561338fed1d8871fc5101199851aba5b7068d109ba935d661d45cf2d60dd19b",
+      "skills/template-authoring/assets/templates/maf/AgentFactory.cs.tmpl": "8f8c89c0165c294196965ef67479e3eef666272d8d060f1c7c281151a3fc439c",
+      "skills/template-authoring/assets/templates/maf/appsettings.json.tmpl": "67e9cf295e1343c8be41e1b53bdf62a3fc6c810f7d91a460ebb4f4a288db5368",
+      "skills/template-authoring/assets/templates/maf/architecture.md.tmpl": "fb63c91d4c76b3f27715091ca26997f8c94e200600b52295e21a810f84e1406a",
+      "skills/template-authoring/assets/templates/maf/AuditMiddleware.cs.tmpl": "263130b97529a4c7d6e9f875e85366b4023d2cd039d4a1d2eaa88db0a325b2b9",
+      "skills/template-authoring/assets/templates/maf/Program.cs.tmpl": "0997adc12402ac1b058808f2c169ad89dabba29ad577806fa63977ca9951a9f1",
+      "skills/template-authoring/assets/templates/maf/Smoke.csproj.tmpl": "74ea939014070fbc96f5e6d9875a6b26fb501aa977b8a72c8113457a15311358",
+      "skills/template-authoring/assets/templates/maf/SmokeProgram.cs.tmpl": "4ee2e575f85eca4365870f527091be25d26eb93ac273ab06d2f931eaf53130b6",
+      "skills/template-authoring/assets/templates/plugin/marketplace.json.tmpl": "baa42d6c3ace9922b97d0a8847d66cc3fd039db2763a22be9873ee73fa40d3e9",
+      "skills/template-authoring/assets/templates/plugin/plugin.json.tmpl": "a4acee3e3ab97b5ce59b5752e214baa984c5b310f73a4b68a819841a965bf208",
+      "skills/template-authoring/assets/templates/pmcro/goal.json.tmpl": "c8712711e612382c3beda12b211bec29b5005a08cef0315791b2e1886b06ea93",
+      "skills/template-authoring/assets/templates/pmcro/orchestrator.agent.md.tmpl": "e7dd00032825afed6b016a473bf046cbee34df08af60201d08640f50599ac599",
+      "skills/template-authoring/assets/templates/pmcro/phase-command.md.tmpl": "98db716a21d5ef76cdec5bb4d77522129107634d468c613ef249774bd120d96b",
+      "skills/template-authoring/assets/templates/pmcro/trails-readme.md.tmpl": "9f540bc0cdccd987bc2a6d44dc09e3e19281d0650242750b37d79f91cb4c00ea",
+      "skills/template-authoring/assets/templates/skill/example.template.md.tmpl": "66bcc277704b37df454d0378bccc40ee082f259d17c91d615f1bb396ea5cf067",
+      "skills/template-authoring/assets/templates/skill/guide.md.tmpl": "6676422137b25469df0bc83dded9995756a227e36b10a4bbb38a3ce9d87624dc",
+      "skills/template-authoring/assets/templates/skill/run.py.tmpl": "0e494d9d7b1f83583fdc1b347826b3242f43a19d9e38d7da6769efef3661db30",
+      "skills/template-authoring/assets/templates/skill/SKILL.md.tmpl": "b3db065951e02f04fade56662cfac3f371f8ffd87e450408d68c802c7b88293e",
+      "skills/template-authoring/assets/verification-report.template.md": "12c148c5543b81cbb4ad1267cc415ed9f5b4f20f86ae84c9de93fc85b6a9825b",
+      "skills/template-authoring/eval.yaml": "de676e9e0483c7f6ee88cb01ab08347c1156eb733a7e220cc3cf360d738085f6",
+      "skills/template-authoring/references/completion-contract.md": "070e01c5a90012772eb63f138e4cd4593dceba58d45077a5684730ef5afbce49",
+      "skills/template-authoring/references/lifecycle.md": "0895e73c3e18fa31641e480a75ff6526e37d429dac22a737bc735cf710f41098",
+      "skills/template-authoring/references/template-types.md": "2ee81208d5693bd39c8d759dd47d52ab5249cdca20d090f08890bb4d14da249c",
+      "skills/template-authoring/scripts/_common.py": "af3c9beee72c0ecb726e066b824574c6bf0a232260b6f09ed8327523a9eac283",
+      "skills/template-authoring/scripts/discover.py": "8030a2066308e4d0e569c6e4d7d6121d08123b3cbdd979d11dcb4b2611ce9003",
+      "skills/template-authoring/scripts/generate.py": "e8ba42aec840e85f8d8fedf4c327b04208cfaf658a0a659d3d1c0e8af26498cb",
+      "skills/template-authoring/scripts/inventory.py": "9f54a4e61a1c123e6d288224a132e64d02ce2420ce1052721f326ae5ad9caf3f",
+      "skills/template-authoring/scripts/resolve_manifest.py": "7446130f106f2d4813eb043dfa0b8f892775a4a8bac6dbb06591852701b24662",
+      "skills/template-authoring/scripts/trail.py": "9a090db3a18f4f65fbc6d07632b333e74b96bbc2fcf6dc5927b8a9fff3bf9e47",
+      "skills/template-authoring/scripts/validate.py": "607c3a80d51af46e3a8d747b5978789c95eed2166c75ffb1e2fb20bb0898eb98",
+      "skills/template-authoring/SKILL.md": "8fa8373ae88be9a587315a741b0a9d78318f68cf10c5f19f9471b389172baf68"
+    }
+  }
+}
