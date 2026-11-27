@@ -1,0 +1,8 @@
+namespace {{Name}}.Agent.Middleware;
+
+/// <summary>Records agent runs. Replace Log with your sink; add allow/deny/modify policy here.</summary>
+public static class AuditMiddleware
+{
+    public static void Log(string phase, string detail) =>
+        Console.Error.WriteLine($"[{DateTimeOffset.UtcNow:O}] {phase}: {detail}");
+}

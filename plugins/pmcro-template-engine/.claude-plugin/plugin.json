@@ -1,0 +1,10 @@
+{
+  "name": "pmcro-template-engine",
+  "version": "0.1.0",
+  "description": "PMCR-O template engine: incremental, verified generation of complete agent, skill, plugin and marketplace projects.",
+  "author": {
+    "email": "planneragent001@gmail.com",
+    "name": "Planner Agent"
+  },
+  "license": "MIT"
+}

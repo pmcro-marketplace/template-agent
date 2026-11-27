@@ -1,0 +1,18 @@
+{
+  "name": "template-agent",
+  "owner": {
+    "name": "PMCR-O Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "template",
+      "source": "./plugins/template",
+      "description": "Declarative reusable template discovery, creation, rendering, validation, and projection workflows."
+    },
+    {
+      "name": "pmcro-template-engine",
+      "source": "./plugins/pmcro-template-engine",
+      "description": "PMCR-O template engine: incremental, verified generation of complete agent, skill, plugin and marketplace projects."
+    }
+  ]
+}

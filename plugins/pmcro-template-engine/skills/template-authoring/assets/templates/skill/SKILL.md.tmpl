@@ -1,0 +1,21 @@
+---
+name: {{skill}}
+description: {{skill_desc}}
+---
+
+# {{skill}}
+
+Part of the `{{name}}` project. This skill turns a short input into a filled output using the
+template in `assets/`, and ships a self-check so the project's tests can prove it is intact.
+
+## Workflow
+
+1. Read `references/guide.md` for the rules this skill follows.
+2. Run `python scripts/run.py --input "<text>"` to fill `assets/example.template.md`.
+3. Run `python scripts/run.py --selfcheck` before reporting the skill as working.
+
+## Additional resources
+
+- `references/guide.md`: rules and output contract
+- `assets/example.template.md`: the output shape (marker `<<INPUT>>`)
+- `scripts/run.py`: the runner; `--selfcheck` verifies sibling files resolve

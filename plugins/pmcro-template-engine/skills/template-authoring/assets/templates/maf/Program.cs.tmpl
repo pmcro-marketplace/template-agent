@@ -1,0 +1,14 @@
+using Microsoft.Extensions.Configuration;
+using {{Name}}.Agent;
+using {{Name}}.Agent.Middleware;
+
+var cfg = new ConfigurationBuilder()
+    .AddJsonFile("appsettings.json", optional: false)
+    .AddEnvironmentVariables()
+    .Build();
+
+var agent = AgentFactory.Create(cfg["Ollama:Endpoint"]!, cfg["Ollama:Model"]!);
+var prompt = args.Length > 0 ? string.Join(' ', args) : "Say hello.";
+AuditMiddleware.Log("run", prompt);
+var response = await agent.RunAsync(prompt);
+Console.WriteLine(response);

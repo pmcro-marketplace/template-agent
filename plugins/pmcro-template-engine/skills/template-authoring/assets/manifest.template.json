@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "type": "skills-marketplace",
+  "name": "example",
+  "root": "/path/to/example",
+  "vars": {},
+  "lists": {"skills": [], "agents": [], "hosts": [], "phases": []},
+  "stages": ["foundation", "skills", "agents", "commands", "plugins", "integration", "tests"],
+  "gates": {},
+  "tests": [{"id": "skill-selfchecks", "cmd": ["python3", "tests/selfcheck.py"], "cwd": "", "status": "not_run"}],
+  "entries": [
+    {"path": "README.md", "stage": "foundation", "status": "pending", "sha256": null, "reason": null, "requires": [], "template": "common/README.md.tmpl", "vars": {}}
+  ]
+}

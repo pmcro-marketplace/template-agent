@@ -1,0 +1,15 @@
+{
+  "name": "template",
+  "version": "0.2.2",
+  "description": "Declarative reusable template discovery, creation, rendering, validation, and projection workflows.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Template Agent",
+    "shortDescription": "Template-driven generation",
+    "longDescription": "Declarative reusable template discovery, creation, rendering, validation, and projection workflows.",
+    "developerName": "Planner Agent",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "For every actionable request, resolve the real Agent -> Plugin -> Skill -> Function. When the installed Hook Agent is available, allow it to autonomously emit and attempt only the applicable lifecycle functions above the target execution. Then invoke the real target capability and verify evidence. Hook emission is not execution; unavailable lifecycle providers return NOT_INVOKED."
+  }
+}

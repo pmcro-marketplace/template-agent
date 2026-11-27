@@ -1,0 +1,8 @@
+{
+  "name": "template",
+  "version": "0.2.2",
+  "description": "Declarative reusable template discovery, creation, rendering, validation, and projection workflows.",
+  "author": {
+    "name": "Planner Agent"
+  }
+}

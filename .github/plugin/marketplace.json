@@ -1,0 +1,32 @@
+{
+  "name": "template-agent",
+  "interface": {
+    "displayName": "Template Agent Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "template",
+      "category": "Developer Tools",
+      "policy": {
+        "authentication": "ON_INSTALL",
+        "installation": "AVAILABLE"
+      },
+      "source": {
+        "path": "./plugins/template",
+        "source": "local"
+      }
+    },
+    {
+      "name": "pmcro-template-engine",
+      "category": "Developer Tools",
+      "policy": {
+        "authentication": "ON_INSTALL",
+        "installation": "AVAILABLE"
+      },
+      "source": {
+        "path": "./plugins/pmcro-template-engine",
+        "source": "local"
+      }
+    }
+  ]
+}
